@@ -1,0 +1,6 @@
+id=MIUI12ABajiangXiaoJingJian
+name=MIUI12小精简&干掉mdnsd
+version=v2
+versionCode=1117
+author=阿巴酱
+description=①解决mdnsd耗电严重问题。②通过精简可以有效提升续航、流畅度、减少内存占用，如果你需要用到的某个程序被精简，请自行拆包删除相应内容再打包重刷即可（有详细注释）。
