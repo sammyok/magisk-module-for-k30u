@@ -7,5 +7,5 @@ killall -9 mdnsd
 am kill mdnsd.rc
 killall -9 mdnsd.rc
 
-#冻结（感谢风雪大佬）
+#freeze
 pm disable com.miui.analytics
