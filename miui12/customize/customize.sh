@@ -19,7 +19,14 @@ author="`grep_prop author $TMPDIR/module.prop`"
 REPLACE="
 /system/priv-app/ContentExtension
 /system/priv-app/Stk1
+/system/priv-app/CallLogBackup
+/system/priv-app/MiCalendarGlobal
+/system/priv-app/MusicFX
+/system/app/ThemeManager
 /system/app/Health
+/system/app/CarrierDefaultApp
+/system/app/MiCloudSync
+/system/app/MiuiVideoPlayer
 /system/app/FrequentPhrase
 /system/app/greenguard
 /system/app/HTMLViewer
