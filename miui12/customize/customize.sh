@@ -4,75 +4,91 @@ MIUI="`getprop ro.miui.ui.version.name`"
 author="`grep_prop author $TMPDIR/module.prop`"
     ui_print "###############################"
     ui_print "- 模块: $MODNAME "
-    ui_print "- 模块ID: MIUI12ABajiangXiaoJingJian "
-    ui_print "- 模块作者: 阿巴酱"
-    ui_print "- 感谢指导: 雲迟"
-    ui_print "- 你的设备: $MIUI"    
     ui_print "###############################"
-    #系统检测
-    [ $MIUI != "V12" ] && echo "- 抱歉，当前MIUI版本不支持（已支持的版本：MIUI12）" && exit 1
-    ui_print "- 你的系统版本符合"
+    #MIUI check
+    [ $MIUI != "V12" ] && echo "Sorry, this module only for MIUI12）" && exit 1
+    ui_print "- MIUI version supported"
     
-#  ABajiang：
-# ●以下精简如果有你需要用到的功能，删除对应内容即可，看下面的注释。
+
 
 REPLACE="
-/system/priv-app/ContentExtension
-/system/priv-app/Stk1
-/system/priv-app/CallLogBackup
-/system/priv-app/MiCalendarGlobal
-/system/priv-app/MusicFX
-/system/app/ThemeManager
-/system/app/Health
-/system/app/CarrierDefaultApp
-/system/app/MiCloudSync
-/system/app/MiuiVideoPlayer
-/system/app/FrequentPhrase
-/system/app/greenguard
-/system/app/HTMLViewer
-/system/app/KSICibaEngine
-/system/app/mab
-/system/app/MiuiContentCatcher
-/system/app/SecurityInputMethod
-/system/priv-app/MiBrowserGlobal
-/system/priv-app/CloudBackup
-/system/priv-app/MiuiMusicGlobal
-/system/priv-app/MiGameCenterSDKService
-/system/product/app/PhotoTable
-/system/app/BasicDreams
-/system/app/ModemTestBox
-/system/app/Cit
-/system/app/TouchAssistant
-/system/product/priv-app/EmergencyInfo
-/system/priv-app/MiRcs
-/system/app/mi_connect_service
-/system/app/WMService
-/system/app/WAPPushManager
-/system/app/Traceur
-/system/app/MiuiBugReport
-/system/priv-app/MiService
-/system/app/MiuiDaemon
-/system/app/Userguide
-/system/priv-app/UserDictionaryProvider
-/system/priv-app/BlockedNumberProvider
-/system/app/SimAppDialog
-/system/app/CatchLog
+/system/app/Mipay
+/system/app/NextPay
+/system/app/PaymentService
+/system/app/VoiceAssist
+/system/app/SogouInput
+/system/app/MiuiAccessibility
+/system/app/AiAsstVision
 /system/app/AnalyticsCore
+/system/app/AntHalService
+/system/app/BasicDreams
+/system/app/BookmarkProvider
+/system/app/BuiltInPrintService
+/system/app/CatchLog
+/system/app/Cit
+/system/app/CloudPrint2
+/system/app/Email
+/system/app/FrequentPhrase
+/system/app/HTMLViewer
+/system/app/Health
 /system/app/HybridAccessory
 /system/app/HybridPlatform
+/system/app/KSICibaEngine
+/system/app/MSA
+/system/app/MiCloudSync
+/system/app/MiLinkService2
+/system/app/MiPlayClient
+/system/app/MiuiBugReport
+/system/app/MiuiContentCatcher
+/system/app/MiuiDaemon
+/system/app/MiuiVideoPlayer
+/system/app/ModemTestBox
 /system/app/PrintSpooler
-/system/app/BuiltInPrintService
+/system/app/SecurityInputMethod
+/system/app/SimAppDialog
+/system/app/SimContact
+/system/app/Stk
+/system/app/TSMClient
+/system/app/ThemeManager
+/system/app/TouchAssistant
+/system/app/Traceur
+/system/app/Userguide
+/system/app/VoiceTrigger
+/system/app/WAPPushManager
+/system/app/WMService
+/system/app/YouDaoEngine
+/system/app/goodix_sz
+/system/app/greenguard
+/system/app/mab
+/system/app/mi_connect_service
+/system/app/talkback
+/system/priv-app/BlockedNumberProvider
+/system/priv-app/Browser
+/system/priv-app/CallLogBackup
+/system/priv-app/CloudBackup
+/system/priv-app/ContentExtension
+/system/priv-app/MiGameCenterSDKService
+/system/priv-app/MiRcs
+/system/priv-app/MiService
 /system/priv-app/MiShare
-/system/app/NQNfcNci
+/system/priv-app/MiuiAod
+/system/priv-app/Music
+/system/priv-app/MusicFX
+/system/priv-app/NewHome
 /system/priv-app/PersonalAssistant
 /system/priv-app/QuickSearchBox
-/system/app/TSMClient
-/system/priv-app/MiuiAod
-/system/app/AiAsstVision
-/system/priv-app/YellowPage
-/system/app/MiPlayClient
-/system/app/MiLinkService2
+/system/priv-app/Stk1
+/system/priv-app/UserDictionaryProvider
+/system/priv-app/EmergencyInfo
+/system/priv-app/MiuiVideo
 /system/priv-app/WfdService
+/system/priv-app/YellowPage
+/system/priv-app/Huanji
+/system/product/app/PhotoTable
+/system/product/priv-app/EmergencyInfo
+/system/priv-app/VoiceTrigger
+/system/priv-app/VoiceUnlock
+/system/priv-app/VoiceCommand
 "
 
 ui_print "
@@ -120,14 +136,6 @@ ui_print "
 
 —————————————————————————————————————————————
 
-# ●温馨提醒：注意以下列出的千万不要精简!!否则可能卡米变砖!!!
-# SecurityCoreAdd 安全核心组件
-# XiaomiServiceFramework 小米服务框架
-# Browser MIUI浏览器
-# MiSettings 设置
-# MiuiSystemUI 系统UI
-# miui 系统核心组件
-# Updater 系统更新
 
 
 
