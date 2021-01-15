@@ -1,3 +1,3 @@
 #!system/bin/sh
-# 清理缓存
+# clear cache
 rm -rf /data/system/package_cache/*
