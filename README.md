@@ -13,7 +13,7 @@ Remove builtin apps;
 * /system/app/CloudPrint2
 * 电子邮箱 /system/app/Email
 * 常用语 /system/app/FrequentPhrase
-/system/app/goodix_sz
+* Goodix指纹 /system/app/goodix_sz
 * 家庭安全守护 /system/app/greenguard
 * 小米健康 /system/app/Health
 * HTML查看器 /system/app/HTMLViewer
@@ -26,8 +26,9 @@ Remove builtin apps;
 * 小米互联通讯服务 /system/app/mi_connect_service
 * 米联服务 /system/app/MiLinkService2
 * 小米钱包 /system/app/Mipay
-* /system/app/MiPlayClient
-/system/app/MiuiAccessibility
+* 小米支付 /system/app/MiPlayClient
+* /system/app/MiuiAccessibility
+
 /system/app/MiuiBugReport
 /system/app/MiuiContentCatcher
 /system/app/MiuiDaemon
