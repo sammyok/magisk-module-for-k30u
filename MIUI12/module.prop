@@ -1,6 +1,6 @@
 id=MIUI12_customize
 name=MIUI12Customize
-version=v1
-versionCode=0115
+version=v1.1
+versionCode=0117
 author=sammyok
 description=remove MIUI12 builtin APPs, shutdown mdnsd
