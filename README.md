@@ -20,7 +20,7 @@ Remove builtin apps;
 * 米联服务 /system/app/MiLinkService2
 * 小米钱包 /system/app/Mipay
 * 小米支付 /system/app/MiPlayClient
-* /system/app/MiuiAccessibility
+* 辅助功能 /system/app/MiuiAccessibility
 * 用户反馈/ system/app/MiuiBugReport
 * 应用程序扩展服务 /system/app/MiuiContentCatcher
 * 用户信息收集 /system/app/MiuiDaemon
@@ -58,25 +58,27 @@ Remove builtin apps;
 * 搜索 /system/priv-app/QuickSearchBox
 * USIM应用 /system/priv-app/Stk1
 * 用户字典 /system/priv-app/UserDictionaryProvider
-* /system/priv-app/VoiceCommand
-* /system/priv-app/VoiceTrigger
-* /system/priv-app/VoiceUnlock
+* 语音命令 /system/priv-app/VoiceCommand
+* 语音触发器 /system/priv-app/VoiceTrigger
+* 语音解锁 /system/priv-app/VoiceUnlock
 * 生活黄页/system/priv-app/YellowPage
 * AI虚拟服务 /system/product/app/aiasst_service
 * 基本互动屏保 /system/product/app/PhotoTable
 * 残疾人无障碍服务 /system/product/app/talkback
 * 急救信息 /system/product/priv-app/EmergencyInfo
 
-* /system/app/CertInstaller
+1/17/2021 append；
+
+* 证书安装器 /system/app/CertInstaller
 * 动态壁纸 /system/app/LiveWallpapersPicker
-* /system/app/UpnpService
+ /system/app/UpnpService
 * /system/app/WallpaperBackup
-* /system/app/MiuiFrequentPhrase
+* 常用语 /system/app/MiuiFrequentPhrase
 * /system/app/MiuiAudioMonitor
 * /system/app/ThemeModule
 * /system/priv-app/MtkVoiceWakeupInteraction
 * /system/priv-app/Tag
-* /system/priv-app/SharedStorageBackup
-* /system/priv-app/StatementService
+ /system/priv-app/SharedStorageBackup
+ /system/priv-app/StatementService
 * /system/product/priv-app/WallpaperCropper
 
